@@ -1,4 +1,4 @@
-### Shopcart
+## Shopcart
 - install react vite install
 - install tailwind css
 - install react router and set it up
