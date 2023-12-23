@@ -37,7 +37,7 @@ const TopCategories = () => {
   return (
     <div className="container mt-20">
       <p className="text-3xl font-bold text-center">Shop Our Top Categories</p>
-      <div className=" articles pt-20">
+      <div className="category-articles pt-20">
         {Data.map((item) => (
           <article key={item.id}>
             <figure>
