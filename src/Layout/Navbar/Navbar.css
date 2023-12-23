@@ -58,12 +58,12 @@ body {
   }
 
   .contact-content {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
   }
 
   .topber-left-menu {
     order: 3;
-    margin-top: 10px;
+    margin-top: 2px;
   }
 
   .topber-menu {
@@ -72,7 +72,7 @@ body {
 
   .dropdown {
     order: 1;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
   }
 }
 
