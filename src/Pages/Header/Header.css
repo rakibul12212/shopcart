@@ -1,0 +1,20 @@
+.bg {
+  background: url("../../assets/header-img/subtle-prism.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.btn {
+  background-color: #11450c;
+  color: #ffffff;
+  font-size: 1.3em;
+  font-weight: 600;
+  position: relative;
+  outline: none;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  height: 65px;
+  width: 180px;
+}
