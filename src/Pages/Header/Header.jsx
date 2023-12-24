@@ -48,7 +48,7 @@ const Header = () => {
 
         <div
           id="header-right"
-          className="container py-8 sm:py-20 hidden sm:block"
+          className="container py-8 sm:py-20 hidden sm:block "
         >
           <div className="wrapper">
             <div className="scene">

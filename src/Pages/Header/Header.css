@@ -27,8 +27,8 @@
 }
 .scene {
   width: 260px;
-  height: 200px;
-  perspective: 1000px;
+  height: 250px;
+  perspective: 7000px;
   position: relative;
 }
 .scene .carousel.keen-slider {
@@ -41,7 +41,7 @@
 }
 .carousel__cell {
   position: absolute;
-  width: 240px;
+  width: 330px;
   left: 10px;
   height: 200px;
   border: 1px solid rgba(0, 0, 0, 0.3);

@@ -10,7 +10,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="nav-topber flex justify-center bg-green-800 py-2 text-white font-inter text-sm leading-5 ">
+      <div className="nav-topber flex justify-center bg-green-800 py-3 text-white font-inter text-sm leading-5 ">
         <div className="container">
           <div className="topbar-content flex justify-center gap-x-40">
             <div className="contact-content flex gap-1">
@@ -97,12 +97,14 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <nav className="bg-white p-4">
+      <nav className="bg-white pt-6 p-2">
         <div className="container mx-auto lg:flex lg:items-center lg:justify-between lg:gap-4">
           <div className="flex justify-between">
             {/* logo */}
-            <div className="text-green-900 text-2xl font-bold" id="logo">
-              <a href="#">ShopCart</a>
+            <div className="text-green-700 text-3xl font-bold" id="logo">
+              <a href="#">
+                <u>Sho</u>p<u>cart</u>
+              </a>
             </div>
 
             {/* search */}
@@ -201,52 +203,52 @@ const Navbar = () => {
 
           {/* Desktop Menu */}
           <div className="hidden lg:flex justify-between gap-8">
-            <div className="relative group  text-xl text-gray-500">
+            <div className="relative group font-bold text-2xl text-gray-600">
               <a href="#">Category</a>
               <div className="absolute hidden bg-white text-gray-800 shadow-md mt-2 py-2 px-4 rounded-md group-hover:block">
                 <a href="#" className="block py-1">
-                  Category 1
+                  Toy
                 </a>
                 <a href="#" className="block py-1">
-                  Category 2
+                  Electronic
                 </a>
                 <a href="#" className="block py-1">
-                  Category 3
+                  Bag
                 </a>
               </div>
             </div>
             <div>
-              <a href="#" className="font-medium text-xl text-gray-500">
+              <a href="#" className="font-bold text-2xl text-gray-600">
                 Deals
               </a>
             </div>
             <div>
-              <a href="#" className="font-medium text-xl text-gray-500">
+              <a href="#" className="font-bold text-2xl text-gray-600">
                 Whats&apos;s New
               </a>
             </div>
             <div>
-              <a href="#" className="font-medium text-xl text-gray-500">
+              <a href="#" className="font-bold text-2xl text-gray-600">
                 Delivery
               </a>
             </div>
           </div>
 
           {/* Search Input  */}
-          <div className="hidden lg:flex border-2 border-gray-300  rounded-full">
+          <div className="hidden lg:flex border-4 border-gray-300  rounded-full">
             <input
               type="text"
               placeholder="Search Product"
               className="w-full p-2  rounded-full px-5"
             />
-            <button className="bg-white text-gray-800 p-2 rounded-full">
+            <button className="bg-white text-gray-500 p-2 rounded-full">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="currentColor"
-                class="w-5 h-5"
+                class="w-6 h-6"
               >
                 <path
                   stroke-linecap="round"
@@ -267,7 +269,7 @@ const Navbar = () => {
                   viewBox="0 0 24 24"
                   stroke-width="1.5"
                   stroke="currentColor"
-                  class="w-5 h-5"
+                  class="w-6 h-6"
                 >
                   <path
                     stroke-linecap="round"
@@ -277,7 +279,7 @@ const Navbar = () => {
                 </svg>
               </div>
               <div>
-                <a href="#" className="font-medium text-xl text-gray-500">
+                <a href="#" className="font-bold text-2xl text-gray-600">
                   Account
                 </a>
               </div>
@@ -290,7 +292,7 @@ const Navbar = () => {
                   viewBox="0 0 24 24"
                   stroke-width="1.5"
                   stroke="currentColor"
-                  class="w-5 h-5"
+                  class="w-6 h-6"
                 >
                   <path
                     stroke-linecap="round"
@@ -300,7 +302,7 @@ const Navbar = () => {
                 </svg>
               </div>
               <div>
-                <a href="#" className="font-medium text-xl text-gray-500">
+                <a href="#" className="font-bold text-2xl text-gray-600">
                   Cart
                 </a>
               </div>
