@@ -37,7 +37,7 @@ const Header = () => {
             <span>Shopping And</span>
             <span>Department Store.</span>
           </h1>
-          <p className="sm:text-2xl w-full sm:w-full py-4 sm:py-10 text-neutral-500 ">
+          <p className="sm:text-4xl w-full sm:w-full py-4 sm:py-10 text-neutral-500 ">
             Shopping is a bit of a relaxing hobby which is sometimes troubling
             for the bank balance.
           </p>
@@ -46,7 +46,10 @@ const Header = () => {
           </button>
         </div>
 
-        <div id="header-right" className="container py-8 sm:py-20">
+        <div
+          id="header-right"
+          className="container py-8 sm:py-20 hidden sm:block"
+        >
           <div className="wrapper">
             <div className="scene">
               <div className="carousel keen-slider" ref={sliderRef}>

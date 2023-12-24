@@ -43,7 +43,7 @@ const Savings = () => {
   return (
     <div className="container mt-20">
       <div>
-        <p className="text-5xl font-bold text-center">Get Up To 70% Off</p>
+        <p className="text-5xl font-bold text-start">Get Up To 70% Off</p>
       </div>
       <div className="savings-articles pt-20">
         {Data.map((item) => (
@@ -53,11 +53,16 @@ const Savings = () => {
               backgroundColor: item.backgroundColor,
               color: item.textColor,
             }}
+            className="w-full" // Add this class to make the card fill the width
           >
             <div className="article-preview px-5 py-10">
               <h3 className="font-extrabold text-2xl text-red-950">Save</h3>
               <h2 className="py-5">
-                <span className="text-2xl font-bold">$</span>
+                <span>
+                  <sup className="text-4xl font-bold">
+                    <sup>$ &#x20;</sup>
+                  </sup>
+                </span>
                 <span className="text-6xl font-bold">{item.amount}</span>
               </h2>
               <p className="text-xl text-gray-500 font-normal tracking-wide">

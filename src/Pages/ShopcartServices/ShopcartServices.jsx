@@ -25,7 +25,7 @@ const ShopcartServices = () => {
   return (
     <div className="container mt-20">
       <div>
-        <p className="text-5xl font-bold text-center">
+        <p className="text-5xl font-bold text-start">
           Services To Help You Shop
         </p>
       </div>
@@ -34,18 +34,14 @@ const ShopcartServices = () => {
           <article key={item.id} className="bg-slate-50">
             <div className="article-preview px-4 md:px-10 py-10">
               <h2 className="py-5">
-                <p className="text-4xl font-bold">{item.title}</p>
+                <p className="text-4xl pr-5 font-bold">{item.title}</p>
               </h2>
               <p className="text-2xl text-gray-500 font-normal tracking-wide">
                 {item.description}
               </p>
             </div>
             <figure>
-              <img
-                src={item.img}
-                alt="Lavender Fields"
-                className="w-full h-auto"
-              />
+              <img src={item.img} alt="Lavender Fields" className="w-full" />
             </figure>
           </article>
         ))}

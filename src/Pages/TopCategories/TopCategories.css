@@ -3,11 +3,11 @@
   flex-wrap: wrap;
   justify-content: center;
   max-width: 1800px;
-  gap: 1.5rem;
+  gap: 0.8rem;
 }
 
 .category-articles article {
-  max-width: 180px;
+  max-width: 240px;
   width: 100%;
   cursor: pointer;
   position: relative;
@@ -17,13 +17,6 @@
   border-radius: 16px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
-
-/* .articles article h2 {
-  margin: 0 0 0.5rem 0;
-  font-size: 1.6rem;
-  color: var(--text);
-  transition: color 0.3s ease-out;
-} */
 
 .category-articles article img {
   max-width: 100%;
@@ -41,6 +34,6 @@
 
 .category-articles figure {
   width: 100%;
-  height: 14rem;
+  height: 18rem;
   overflow: hidden;
 }

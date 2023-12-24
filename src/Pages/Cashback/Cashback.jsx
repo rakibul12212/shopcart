@@ -8,7 +8,7 @@ const Cashback = () => {
           <p className="font-bold text-2xl sm:text-8xl text-green-800">
             Get 5% Cash Back
           </p>
-          <p className="text-lg sm:text-2xl py-5 text-neutral-500">
+          <p className="text-lg sm:text-4xl py-5 text-neutral-500">
             on shopcart.com
           </p>
           <button
