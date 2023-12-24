@@ -6,7 +6,7 @@
 #btn {
   background-color: #11450c;
   color: #ffffff;
-  font-size: 1.3em;
+  font-size: 1.5em;
   font-weight: 400;
   position: relative;
   outline: none;
@@ -15,8 +15,8 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  height: 45px;
-  width: 140px;
+  height: 65px;
+  width: 180px;
 }
 /* carosal */
 

@@ -33,11 +33,11 @@ const Header = () => {
     <div className="bg">
       <div className="container flex space-x-10">
         <div id="header-left" className="container py-8 sm:py-20">
-          <h1 className="font-bold text-3xl sm:text-5xl w-75% sm:w-1/2 items-center tracking-wide text-green-800 ">
+          <h1 className="font-bold text-3xl sm:text-8xl w-75% sm:w-1/2 items-center tracking-wide text-green-800 ">
             <span>Shopping And</span>
             <span>Department Store.</span>
           </h1>
-          <p className="sm:text-xl w-full sm:w-full py-4 sm:py-10 text-neutral-500 ">
+          <p className="sm:text-2xl w-full sm:w-full py-4 sm:py-10 text-neutral-500 ">
             Shopping is a bit of a relaxing hobby which is sometimes troubling
             for the bank balance.
           </p>

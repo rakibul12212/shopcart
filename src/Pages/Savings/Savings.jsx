@@ -43,7 +43,7 @@ const Savings = () => {
   return (
     <div className="container mt-20">
       <div>
-        <p className="text-3xl font-bold text-center">Get Up To 70% Off</p>
+        <p className="text-5xl font-bold text-center">Get Up To 70% Off</p>
       </div>
       <div className="savings-articles pt-20">
         {Data.map((item) => (
