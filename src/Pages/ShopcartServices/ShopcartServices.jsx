@@ -29,10 +29,10 @@ const ShopcartServices = () => {
           Services To Help You Shop
         </p>
       </div>
-      <div className="Services-articles pt-20 ">
+      <div className="Services-articles pt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {Data.map((item) => (
-          <article key={item.id} className=" bg-slate-50">
-            <div className="article-preview px-10 py-10">
+          <article key={item.id} className="bg-slate-50">
+            <div className="article-preview px-4 md:px-10 py-10">
               <h2 className="py-5">
                 <p className="text-4xl font-bold">{item.title}</p>
               </h2>
@@ -41,7 +41,11 @@ const ShopcartServices = () => {
               </p>
             </div>
             <figure>
-              <img src={item.img} alt="Lavender Fields" />
+              <img
+                src={item.img}
+                alt="Lavender Fields"
+                className="w-full h-auto"
+              />
             </figure>
           </article>
         ))}
