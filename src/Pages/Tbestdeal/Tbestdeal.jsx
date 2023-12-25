@@ -14,7 +14,7 @@ const Tbestdeal = () => {
       </div>
       <div>
         <Swiper
-          slidesPerView={3}
+          slidesPerView={1}
           spaceBetween={20}
           pagination={{
             clickable: true,
@@ -26,8 +26,8 @@ const Tbestdeal = () => {
               spaceBetween: 20,
             },
             768: {
-              slidesPerView: 3,
-              spaceBetween: 10,
+              slidesPerView: 2,
+              spaceBetween: 200,
             },
             1024: {
               slidesPerView: 3,
@@ -65,7 +65,7 @@ const Tbestdeal = () => {
                   className="h-64 w-full object-cover transition duration-500 group-hover:scale-105 sm:h-72 bg-slate-200 rounded-2xl"
                 />
 
-                <div className="relative  bg-white ">
+                <div className="relative bg-white">
                   <div className="flex justify-between pt-5">
                     <h3 className=" text-lg font-bold text-gray-900">
                       HomePod mini
@@ -79,6 +79,19 @@ const Tbestdeal = () => {
                       Table with air purifier strained veneer/black
                     </p>
                   </div>
+                  <div className="rating">
+                    <input value="5" name="rating" id="star5" type="radio" />
+                    <label htmlFor="star5"></label>
+                    <input value="4" name="rating" id="star4" type="radio" />
+                    <label htmlFor="star4"></label>
+                    <input value="3" name="rating" id="star3" type="radio" />
+                    <label htmlFor="star3"></label>
+                    <input value="2" name="rating" id="star2" type="radio" />
+                    <label htmlFor="star2"></label>
+                    <input value="1" name="rating" id="star1" type="radio" />
+                    <label htmlFor="star1"></label>
+                  </div>
+
                   <form className="mt-4">
                     <button className="block w-1/3 rounded-full  border border-black p-3 text-sm font-medium transition hover:bg-green-900 hover:text-white hover:border-none">
                       Add to Cart
@@ -130,6 +143,18 @@ const Tbestdeal = () => {
                       Table with air purifier,stained veneer/black
                     </p>
                   </div>
+                  <div className="rating">
+                    <input value="5" name="rating" id="star5" type="radio" />
+                    <label htmlFor="star5"></label>
+                    <input value="4" name="rating" id="star4" type="radio" />
+                    <label htmlFor="star4"></label>
+                    <input value="3" name="rating" id="star3" type="radio" />
+                    <label htmlFor="star3"></label>
+                    <input value="2" name="rating" id="star2" type="radio" />
+                    <label htmlFor="star2"></label>
+                    <input value="1" name="rating" id="star1" type="radio" />
+                    <label htmlFor="star1"></label>
+                  </div>
                   <form className="mt-4">
                     <button className="block w-1/3 rounded-full  border border-black p-3 text-sm font-medium transition hover:bg-green-900 hover:text-white hover:border-none">
                       Add to Cart
@@ -178,8 +203,20 @@ const Tbestdeal = () => {
                   </div>
                   <div>
                     <p className="text-base tracking-wide mt-2">
-                      Canvas, geniune leather and well furnished
+                      Canvas, geniune leather
                     </p>
+                  </div>
+                  <div className="rating">
+                    <input value="5" name="rating" id="star5" type="radio" />
+                    <label htmlFor="star5"></label>
+                    <input value="4" name="rating" id="star4" type="radio" />
+                    <label htmlFor="star4"></label>
+                    <input value="3" name="rating" id="star3" type="radio" />
+                    <label htmlFor="star3"></label>
+                    <input value="2" name="rating" id="star2" type="radio" />
+                    <label htmlFor="star2"></label>
+                    <input value="1" name="rating" id="star1" type="radio" />
+                    <label htmlFor="star1"></label>
                   </div>
                   <form className="mt-4">
                     <button className="block w-1/3 rounded-full  border border-black p-3 text-sm font-medium transition hover:bg-green-900 hover:text-white hover:border-none">
@@ -233,6 +270,18 @@ const Tbestdeal = () => {
                       Selfie mode and selfie mirror, Macro mode
                     </p>
                   </div>
+                  <div className="rating">
+                    <input value="5" name="rating" id="star5" type="radio" />
+                    <label htmlFor="star5"></label>
+                    <input value="4" name="rating" id="star4" type="radio" />
+                    <label htmlFor="star4"></label>
+                    <input value="3" name="rating" id="star3" type="radio" />
+                    <label htmlFor="star3"></label>
+                    <input value="2" name="rating" id="star2" type="radio" />
+                    <label htmlFor="star2"></label>
+                    <input value="1" name="rating" id="star1" type="radio" />
+                    <label htmlFor="star1"></label>
+                  </div>
                   <form className="mt-4">
                     <button className="block w-1/3 rounded-full  border border-black p-3 text-sm font-medium transition hover:bg-green-900 hover:text-white hover:border-none">
                       Add to Cart
@@ -284,6 +333,18 @@ const Tbestdeal = () => {
                     <p className="text-base tracking-wide mt-2">
                       Table with air purifier strained veneer/black
                     </p>
+                  </div>
+                  <div className="rating">
+                    <input value="5" name="rating" id="star5" type="radio" />
+                    <label htmlFor="star5"></label>
+                    <input value="4" name="rating" id="star4" type="radio" />
+                    <label htmlFor="star4"></label>
+                    <input value="3" name="rating" id="star3" type="radio" />
+                    <label htmlFor="star3"></label>
+                    <input value="2" name="rating" id="star2" type="radio" />
+                    <label htmlFor="star2"></label>
+                    <input value="1" name="rating" id="star1" type="radio" />
+                    <label htmlFor="star1"></label>
                   </div>
                   <form className="mt-4">
                     <button className="block w-1/3 rounded-full  border border-black p-3 text-sm font-medium transition hover:bg-green-900 hover:text-white hover:border-none">
