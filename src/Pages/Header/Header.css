@@ -6,7 +6,7 @@
 #btn {
   background-color: #11450c;
   color: #ffffff;
-  font-size: 1.5em;
+  font-size: 1em;
   font-weight: 400;
   position: relative;
   outline: none;
@@ -15,8 +15,8 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  height: 65px;
-  width: 180px;
+  height: 45px;
+  width: 160px;
 }
 
 /* carosal */
@@ -28,7 +28,7 @@
 .scene {
   width: 260px;
   height: 250px;
-  perspective: 7000px;
+  perspective: 1000px;
   position: relative;
 }
 .scene .carousel.keen-slider {
@@ -41,7 +41,7 @@
 }
 .carousel__cell {
   position: absolute;
-  width: 330px;
+  width: 230px;
   left: 10px;
   height: 200px;
   border: 1px solid rgba(0, 0, 0, 0.3);
