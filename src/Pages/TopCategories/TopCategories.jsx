@@ -36,15 +36,14 @@ const TopCategories = () => {
   ];
   return (
     <div className="container mt-20">
-      <p className="text-5xl font-bold text-start">Shop Our Top Categories</p>
+      <p className="text-4xl font-bold text-start">Shop Our Top Categories</p>
       <div className="category-articles pt-20">
         {Data.map((item) => (
-          <article key={item.id}>
+          <article key={item.id} className="container">
             <figure>
-              {/* Use the actual image path from the item */}
-              <img src={item.img} alt={item.name} />
+              <img src={item.img} alt={item.img} />
             </figure>
-            <div className="article-preview p-1 flex bg-none justify-center">
+            <div className=" article-preview p-1 flex bg-none justify-center">
               <h2>{item.name}</h2>
             </div>
           </article>
