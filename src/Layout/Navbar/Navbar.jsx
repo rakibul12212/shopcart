@@ -97,11 +97,11 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <nav className="bg-white pt-6 p-2">
+      <nav className="bg-white pt-4 ">
         <div className="container mx-auto lg:flex lg:items-center lg:justify-between lg:gap-4">
           <div className="flex justify-between">
             {/* logo */}
-            <div className="text-green-700 text-3xl font-bold" id="logo">
+            <div className="text-green-700 text-2xl font-bold" id="logo">
               <a href="#">
                 <u>Sho</u>p<u>cart</u>
               </a>
@@ -202,8 +202,8 @@ const Navbar = () => {
           </div>
 
           {/* Desktop Menu */}
-          <div className="hidden lg:flex justify-between gap-8">
-            <div className="relative group font-bold text-2xl text-gray-600">
+          <div className="hidden lg:flex text-large. justify-between gap-6">
+            <div className="relative group font-bold text-large text-gray-600">
               <a href="#">Category</a>
               <div className="absolute hidden bg-white text-gray-800 shadow-md mt-2 py-2 px-4 rounded-md group-hover:block">
                 <a href="#" className="block py-1">
@@ -218,28 +218,28 @@ const Navbar = () => {
               </div>
             </div>
             <div>
-              <a href="#" className="font-bold text-2xl text-gray-600">
+              <a href="#" className="font-bold  text-gray-600">
                 Deals
               </a>
             </div>
             <div>
-              <a href="#" className="font-bold text-2xl text-gray-600">
+              <a href="#" className="font-bold  text-gray-600">
                 Whats&apos;s New
               </a>
             </div>
             <div>
-              <a href="#" className="font-bold text-2xl text-gray-600">
+              <a href="#" className="font-bold  text-gray-600">
                 Delivery
               </a>
             </div>
           </div>
 
           {/* Search Input  */}
-          <div className="hidden lg:flex border-4 border-gray-300  rounded-full">
+          <div className="hidden lg:flex border-2 border-gray-300  rounded-full">
             <input
               type="text"
               placeholder="Search Product"
-              className="w-full p-2  rounded-full px-5"
+              className="w-full  rounded-full px-2"
             />
             <button className="bg-white text-gray-500 p-2 rounded-full">
               <svg
@@ -248,7 +248,7 @@ const Navbar = () => {
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="currentColor"
-                class="w-6 h-6"
+                class="w-4 h-4"
               >
                 <path
                   stroke-linecap="round"
@@ -260,7 +260,7 @@ const Navbar = () => {
           </div>
 
           {/* Account and Cart  */}
-          <div className="hidden lg:flex items-center gap-8">
+          <div className="hidden lg:flex items-center gap-6">
             <div className="flex items-center gap-2">
               <div>
                 <svg
@@ -269,7 +269,7 @@ const Navbar = () => {
                   viewBox="0 0 24 24"
                   stroke-width="1.5"
                   stroke="currentColor"
-                  class="w-6 h-6"
+                  class="w-5 h-5"
                 >
                   <path
                     stroke-linecap="round"
@@ -279,7 +279,7 @@ const Navbar = () => {
                 </svg>
               </div>
               <div>
-                <a href="#" className="font-bold text-2xl text-gray-600">
+                <a href="#" className="font-bold text-xlarge text-gray-600">
                   Account
                 </a>
               </div>
@@ -292,7 +292,7 @@ const Navbar = () => {
                   viewBox="0 0 24 24"
                   stroke-width="1.5"
                   stroke="currentColor"
-                  class="w-6 h-6"
+                  class="w-5 h-5"
                 >
                   <path
                     stroke-linecap="round"
@@ -302,7 +302,7 @@ const Navbar = () => {
                 </svg>
               </div>
               <div>
-                <a href="#" className="font-bold text-2xl text-gray-600">
+                <a href="#" className="font-bold text-large text-gray-600">
                   Cart
                 </a>
               </div>
@@ -310,7 +310,6 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
-      ;
     </>
   );
 };
