@@ -1,3 +1,4 @@
+// import React, { useState } from "react";
 import React, { useState } from "react";
 import "./Navbar.css";
 
@@ -97,7 +98,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <nav className="bg-white pt-4 ">
+      <nav id="sticky-nav" className="bg-white pt-4 ">
         <div className="container mx-auto lg:flex lg:items-center lg:justify-between lg:gap-4">
           <div className="flex justify-between">
             {/* logo */}
@@ -204,7 +205,12 @@ const Navbar = () => {
           {/* Desktop Menu */}
           <div className="hidden lg:flex text-large. justify-between gap-6">
             <div className="relative group font-bold text-large text-gray-600">
-              <a href="#">Category</a>
+              <a
+                href="#"
+                className="hover:text-xl hover:transition-all duration-300 ease-in-out"
+              >
+                Category
+              </a>
               <div className="absolute hidden bg-white text-gray-800 shadow-md mt-2 py-2 px-4 rounded-md group-hover:block">
                 <a href="#" className="block py-1">
                   Toy
@@ -218,17 +224,26 @@ const Navbar = () => {
               </div>
             </div>
             <div>
-              <a href="#" className="font-bold  text-gray-600">
+              <a
+                href="#"
+                className="font-bold  text-gray-600 hover:text-xl hover:transition-all duration-300 ease-in-out"
+              >
                 Deals
               </a>
             </div>
             <div>
-              <a href="#" className="font-bold  text-gray-600">
+              <a
+                href="#"
+                className="font-bold  text-gray-600 hover:text-xl hover:transition-all duration-300 ease-in-out"
+              >
                 Whats&apos;s New
               </a>
             </div>
             <div>
-              <a href="#" className="font-bold  text-gray-600">
+              <a
+                href="#"
+                className="font-bold  text-gray-600 hover:text-xl hover:transition-all duration-300 ease-in-out"
+              >
                 Delivery
               </a>
             </div>

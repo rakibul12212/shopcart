@@ -5,6 +5,8 @@ import Savings from "../Savings/Savings";
 import Cashback from "../Cashback/Cashback";
 import ShopcartServices from "../ShopcartServices/ShopcartServices";
 import Tbestdeal from "../Tbestdeal/Tbestdeal";
+import MostSellingProduct from "../MostSellingProduct/MostSellingProduct";
+import TrendingProduct from "../TrendingProduct/TrendingProduct";
 
 const Home = () => {
   return (
@@ -12,8 +14,10 @@ const Home = () => {
       <Header></Header>
       <TopCategories></TopCategories>
       <Tbestdeal></Tbestdeal>
-      <Cashback></Cashback>
       <Savings></Savings>
+      <Cashback></Cashback>
+      <MostSellingProduct></MostSellingProduct>
+      <TrendingProduct></TrendingProduct>
       <ShopcartServices></ShopcartServices>
     </div>
   );
