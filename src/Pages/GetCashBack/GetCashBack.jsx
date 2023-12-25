@@ -4,7 +4,7 @@ import "./GetCashBack.css";
 const GetCashBack = () => {
   return (
     <div className="mt-20">
-      <div className="background py-40 pr-4 pl-4 sm:pr-10 sm:pl-96">
+      <div className="background py-40 pr-4 pl-4 sm:pr-10 sm:pl-96 xl:pr-64">
         <div className="bg-green-950 p-8 sm:p-16">
           <p className="font-bold text-2xl sm:text-6xl w-full sm:w-75% items-center tracking-wide text-white">
             Get 12% Cash Back On $200

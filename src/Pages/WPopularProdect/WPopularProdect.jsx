@@ -1,15 +1,15 @@
-import "./Tbestdeal.css";
+import "./WPopularProdect.css";
 import { Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 
-const Tbestdeal = () => {
+const WPopularProdect = () => {
   return (
     <div className="container ">
       <div>
         <p className="text-4xl py-20 font-bold text-start">
-          Todays Best Deals For You!
+          Weekly Popular Products
         </p>
       </div>
       <div>
@@ -361,4 +361,4 @@ const Tbestdeal = () => {
   );
 };
 
-export default Tbestdeal;
+export default WPopularProdect;

@@ -333,7 +333,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="mt-12 border-t border-gray-500 pt-6">
+          <div className="mt-12  ">
             <div className="text-center sm:flex sm:justify-between sm:text-left">
               <p className="text-sm text-gray-500">
                 <span className="block sm:inline">All rights reserved.</span>

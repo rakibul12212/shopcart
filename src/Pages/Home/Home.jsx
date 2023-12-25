@@ -4,24 +4,30 @@ import TopCategories from "../TopCategories/TopCategories";
 import Savings from "../Savings/Savings";
 import Cashback from "../Cashback/Cashback";
 import ShopcartServices from "../ShopcartServices/ShopcartServices";
-import Tbestdeal from "../Tbestdeal/Tbestdeal";
+
 import MostSellingProduct from "../MostSellingProduct/MostSellingProduct";
 import TrendingProduct from "../TrendingProduct/TrendingProduct";
 import ChooseBrand from "../ChooseBrand/ChooseBrand";
 import GetCashBack from "../GetCashBack/GetCashBack";
+import BestDealsSorting from "../BestDealsSorting/BestDealsSorting";
+import BestSellingStore from "../bestSellingStore/bestSellingStore";
+import WPopularProdect from "../WPopularProdect/WPopularProdect";
 
 const Home = () => {
   return (
     <div>
       <Header></Header>
       <TopCategories></TopCategories>
-      <Tbestdeal></Tbestdeal>
+
+      <TrendingProduct></TrendingProduct>
       <ChooseBrand></ChooseBrand>
       <Savings></Savings>
       <Cashback></Cashback>
       <MostSellingProduct></MostSellingProduct>
-      <TrendingProduct></TrendingProduct>
+      <BestDealsSorting></BestDealsSorting>
       <GetCashBack></GetCashBack>
+      <WPopularProdect></WPopularProdect>
+      <BestSellingStore></BestSellingStore>
       <ShopcartServices></ShopcartServices>
     </div>
   );
