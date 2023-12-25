@@ -1,0 +1,11 @@
+.background {
+  background: url("https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63e8c4e51a7c201f00ec5fe3_biscount%20banner-min.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 640px) {
+  .background {
+    background-position: center;
+  }
+}

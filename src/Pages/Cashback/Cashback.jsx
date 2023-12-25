@@ -2,7 +2,7 @@ import React from "react";
 
 const Cashback = () => {
   return (
-    <div className="bg-red-50 items-center">
+    <div className="bg-orange-100 items-center">
       <div className="container mt-10 sm:mt-20 px-4 sm:px-10 py-10 sm:py-20 flex flex-col sm:flex-row items-center">
         <div id="left-content" className="text-center sm:text-left sm:w-1/2">
           <p className="font-bold text-2xl sm:text-6xl text-green-800">

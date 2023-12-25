@@ -8,6 +8,7 @@ import Tbestdeal from "../Tbestdeal/Tbestdeal";
 import MostSellingProduct from "../MostSellingProduct/MostSellingProduct";
 import TrendingProduct from "../TrendingProduct/TrendingProduct";
 import ChooseBrand from "../ChooseBrand/ChooseBrand";
+import GetCashBack from "../GetCashBack/GetCashBack";
 
 const Home = () => {
   return (
@@ -20,6 +21,7 @@ const Home = () => {
       <Cashback></Cashback>
       <MostSellingProduct></MostSellingProduct>
       <TrendingProduct></TrendingProduct>
+      <GetCashBack></GetCashBack>
       <ShopcartServices></ShopcartServices>
     </div>
   );
