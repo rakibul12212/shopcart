@@ -7,4 +7,4 @@
 - headlessui
 - keen-slider
 - swiper
-## live-link: https://superlative-macaron-7b74fe.netlify.app/
+## live-link: https://exquisite-basbousa-e447ab.netlify.app/
