@@ -41,7 +41,7 @@ const TopCategories = () => {
       </p>
       <div className="category-articles pt-20">
         {Data.map((item) => (
-          <article key={item.id} className="container">
+          <article key={item.id}>
             <figure>
               <img src={item.img} alt={item.img} />
             </figure>
