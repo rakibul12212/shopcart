@@ -41,7 +41,7 @@ const Savings = () => {
     },
   ];
   return (
-    <div className="container  mt-20">
+    <div className="container  mt-20" id="container">
       <div>
         <p className="text-4xl font-bold text-start">Get Up To 70% Off</p>
       </div>

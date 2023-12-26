@@ -3,6 +3,12 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+@media (max-width: 640px) {
+  #header-left {
+    padding-left: 16px; /* Adjust the value as needed */
+    padding-right: 16px; /* Adjust the value as needed */
+  }
+}
 #btn {
   background-color: #11450c;
   color: #ffffff;

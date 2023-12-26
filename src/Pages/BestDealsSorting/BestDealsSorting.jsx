@@ -1,9 +1,5 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./BestDealsSorting.css";
-// import { Pagination } from "swiper/modules";
-// import { Swiper, SwiperSlide } from "swiper/react";
-// import "swiper/css";
-// import "swiper/css/pagination";
 
 const BestDealsSorting = () => {
   const data = [
@@ -64,6 +60,27 @@ const BestDealsSorting = () => {
       img: "https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63e8c4e64bd907adafd35b46_ipad%20mini-min.png",
     },
   ];
+  const [showAll, setShowAll] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768); // Adjust the breakpoint as needed
+    };
+
+    // Initial check and add event listener for window resize
+    handleResize();
+    window.addEventListener("resize", handleResize);
+
+    // Clean up the event listener on component unmount
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  const visibleData = showAll
+    ? data
+    : data.slice(0, isMobile ? 3 : data.length);
   return (
     <div className="container">
       <div>
@@ -73,7 +90,7 @@ const BestDealsSorting = () => {
       </div>
       <div
         id="btn-group"
-        className=" pb-5 pr-28 grid grid-cols-3 md:grid-cols-2 lg:grid-cols-6 xl:grid-cols-6 gap-4 "
+        className=" pb-5 pr-16 grid grid-cols-3 md:grid-cols-2 lg:grid-cols-6 xl:grid-cols-6 gap-4 "
       >
         <button className="w-full lg:w-full rounded-full border border-black p-2 text-sm font-base transition hover:bg-green-900 hover:text-white hover:border-none">
           Gadgets
@@ -99,7 +116,7 @@ const BestDealsSorting = () => {
         id="card"
         className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4"
       >
-        {data.map((item) => (
+        {visibleData.map((item) => (
           <div key={item.id}>
             <a href="#" className="group relative block  overflow-hidden">
               <button className="absolute end-4 top-4 z-10 rounded-full bg-white p-1.5 text-gray-900 transition hover:text-gray-900/75">
@@ -161,6 +178,16 @@ const BestDealsSorting = () => {
           </div>
         ))}
       </div>
+      {isMobile && !showAll && (
+        <div className="flex justify-center">
+          <button
+            className="border-2 hover:bg-green-900 hover:text-white px-4 py-2 rounded-full mt-4"
+            onClick={() => setShowAll(true)}
+          >
+            See All
+          </button>
+        </div>
+      )}
     </div>
   );
 };

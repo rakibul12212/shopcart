@@ -36,7 +36,9 @@ const TopCategories = () => {
   ];
   return (
     <div className="container mt-20">
-      <p className="text-4xl font-bold text-start">Shop Our Top Categories</p>
+      <p id="title" className="text-4xl font-bold text-start">
+        Shop Our Top Categories
+      </p>
       <div className="category-articles pt-20">
         {Data.map((item) => (
           <article key={item.id} className="container">

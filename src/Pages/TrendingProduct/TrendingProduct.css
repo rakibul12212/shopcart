@@ -1,3 +1,9 @@
+@media (max-width: 640px) {
+  #container {
+    padding-left: 16px; /* Adjust the value as needed */
+    padding-right: 16px; /* Adjust the value as needed */
+  }
+}
 .Services-articles {
   display: flex;
   flex-wrap: wrap;

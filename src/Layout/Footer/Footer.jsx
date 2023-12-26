@@ -1,6 +1,7 @@
 import React from "react";
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
   return (
     <div className="container mt-20 border-t border-gray-500">
       <footer className="bg-white">
@@ -356,7 +357,7 @@ const Footer = () => {
               </p>
 
               <p className="mt-4 text-sm text-gray-500 sm:order-first sm:mt-0">
-                &copy; 2023 Shopcart
+                &copy; {currentYear} Shopcart
               </p>
             </div>
           </div>

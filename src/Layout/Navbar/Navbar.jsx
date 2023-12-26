@@ -141,25 +141,32 @@ const Navbar = () => {
               <div className=" py-4 ">
                 <div>
                   {" "}
-                  <span className="font-bold">Category</span>
+                  <span className="font-bold text-green-700">Category</span>
                   <select className="px-5">
-                    <option value="subcategory1">Toy</option>
-                    <option value="subcategory2">Electonics</option>
-                    <option value="subcategory3">bag</option>
+                    <option value="subcategory1" className="text-gray-600">
+                      Toy
+                    </option>
+                    <option value="subcategory2" className="text-gray-600">
+                      Electonics
+                    </option>
+                    <option value="subcategory3" className="text-gray-600">
+                      bag
+                    </option>
                   </select>
                 </div>
+
                 <div>
-                  <a href="#" className="font-bold">
+                  <a href="#" className="font-bold text-green-700">
                     Deals
                   </a>
                 </div>
                 <div>
-                  <a href="#" className="font-bold">
+                  <a href="#" className="font-bold text-green-700">
                     Whats&apos;s New
                   </a>
                 </div>
                 <div>
-                  <a href="#" className="font-bold">
+                  <a href="#" className="font-bold text-green-700">
                     Delivery
                   </a>
                 </div>
@@ -207,18 +214,27 @@ const Navbar = () => {
             <div className="relative group font-bold text-large text-gray-600">
               <a
                 href="#"
-                className="hover:text-xl hover:transition-all duration-300 ease-in-out"
+                className="hover:border-b-2 hover:border-green-700  hover:pb-2"
               >
                 Category
               </a>
               <div className="absolute hidden bg-white text-gray-800 shadow-md mt-2 py-2 px-4 rounded-md group-hover:block">
-                <a href="#" className="block py-1">
+                <a
+                  href="#"
+                  className="block py-1 hover:border-b hover:border-green-700  hover:pb-2"
+                >
                   Toy
                 </a>
-                <a href="#" className="block py-1">
+                <a
+                  href="#"
+                  className="block py-1 hover:border-b hover:border-green-700  hover:pb-2"
+                >
                   Electronic
                 </a>
-                <a href="#" className="block py-1">
+                <a
+                  href="#"
+                  className="block py-1 hover:border-b hover:border-green-700  hover:pb-2"
+                >
                   Bag
                 </a>
               </div>
@@ -226,7 +242,7 @@ const Navbar = () => {
             <div>
               <a
                 href="#"
-                className="font-bold  text-gray-600 hover:text-xl hover:transition-all duration-300 ease-in-out"
+                className="font-bold  text-gray-600 hover:border-b-2 hover:border-green-700  hover:pb-2"
               >
                 Deals
               </a>
@@ -234,7 +250,7 @@ const Navbar = () => {
             <div>
               <a
                 href="#"
-                className="font-bold  text-gray-600 hover:text-xl hover:transition-all duration-300 ease-in-out"
+                className="font-bold  text-gray-600 hover:border-b-2 hover:border-green-700  hover:pb-2"
               >
                 Whats&apos;s New
               </a>
@@ -242,7 +258,7 @@ const Navbar = () => {
             <div>
               <a
                 href="#"
-                className="font-bold  text-gray-600 hover:text-xl hover:transition-all duration-300 ease-in-out"
+                className="font-bold  text-gray-600 hover:border-b-2 hover:border-green-700  hover:pb-2"
               >
                 Delivery
               </a>

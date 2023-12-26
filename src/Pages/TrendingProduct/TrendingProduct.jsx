@@ -22,7 +22,7 @@ const TrendingProduct = () => {
     },
   ];
   return (
-    <div className="container mt-20">
+    <div id="container" className="container mt-20">
       <div>
         <p className="text-4xl font-bold text-start">
           Trending Products For You!

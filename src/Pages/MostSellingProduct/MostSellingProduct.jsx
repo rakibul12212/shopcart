@@ -7,7 +7,7 @@ import "swiper/css/pagination";
 import "./MostSellingProduct.css";
 const MostSellingProduct = () => {
   return (
-    <div className="container ">
+    <div className="container">
       <div>
         <p className="text-4xl py-20 font-bold text-start">
           Most Selling Products
@@ -128,7 +128,7 @@ const MostSellingProduct = () => {
                 <img
                   src="https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63e8c4e74b76916e072f2466_watch-min.png"
                   alt=""
-                  className="h-64 w-full object-cover transition duration-500 group-hover:scale-105 sm:h-72 bg-slate-200 rounded-2xl"
+                  className="h-72 w-full object-cover transition duration-500 group-hover:scale-105 sm:h-72 bg-slate-200 rounded-2xl"
                 />
 
                 <div className="relative  bg-white ">

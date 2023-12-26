@@ -31,8 +31,8 @@ const Header = () => {
   );
   return (
     <div className="bg">
-      <div className="container flex space-x-10">
-        <div id="header-left" className="container py-8 sm:py-20">
+      <div className="container flex space-x-10 ">
+        <div id="header-left" className=" py-8 sm:py-20 ">
           <h1 className="font-bold text-3xl sm:text-6xl w-75% sm:w-1/2 items-center tracking-wide text-green-800 ">
             <span>Shopping And</span>
             <span>Department Store.</span>
