@@ -10,6 +10,7 @@ import ChooseBrand from "../ChooseBrand/ChooseBrand";
 import GetCashBack from "../GetCashBack/GetCashBack";
 import BestDealsSorting from "../BestDealsSorting/BestDealsSorting";
 import WPopularProdect from "../WPopularProdect/WPopularProdect";
+import BestSellingStore from "../bestSellingStore/BestSellingStore";
 
 
 const Home = () => {
@@ -25,6 +26,7 @@ const Home = () => {
       <BestDealsSorting></BestDealsSorting>
       <GetCashBack></GetCashBack>
       <WPopularProdect></WPopularProdect>
+      <BestSellingStore></BestSellingStore>
       <ShopcartServices></ShopcartServices>
     </div>
   );
