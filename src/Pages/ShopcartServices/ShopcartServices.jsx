@@ -5,7 +5,7 @@ const ShopcartServices = () => {
   const Data = [
     {
       id: 1,
-      title: "Frequently Asked Questions",
+      title: "Frequently Asked ",
       description: "Updates on safe Shopping in our Stores",
       img: "https://i.ibb.co/6s7tf45/Questions.png",
     },
