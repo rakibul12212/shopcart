@@ -7,4 +7,4 @@
 - headlessui
 - keen-slider
 - swiper
-## live-link: shopcart-red.vercel.app
+## live-link: https://shopcart-red.vercel.app/
