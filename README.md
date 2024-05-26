@@ -7,4 +7,4 @@
 - headlessui
 - keen-slider
 - swiper
-## live-link: https://exquisite-basbousa-e447ab.netlify.app/
+## live-link: shopcart-red.vercel.app
