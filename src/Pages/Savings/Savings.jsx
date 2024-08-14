@@ -41,11 +41,16 @@ const Savings = () => {
     },
   ];
   return (
-    <div className="container px-20 mt-20" id="container">
+    <div
+      className="container px-4 sm:px-10 lg:px-20 mt-10 lg:mt-20"
+      id="container"
+    >
       <div>
-        <p className="text-4xl font-bold text-start">Get Up To 70% Off</p>
+        <p className="text-2xl sm:text-3xl lg:text-4xl font-bold text-start">
+          Get Up To 70% Off
+        </p>
       </div>
-      <div className="savings-articles pt-20">
+      <div className="savings-articles pt-10 lg:pt-20">
         {Data.map((item) => (
           <article
             key={item.id}
@@ -53,24 +58,32 @@ const Savings = () => {
               backgroundColor: item.backgroundColor,
               color: item.textColor,
             }}
-            className="container w-full" // Add this class to make the card fill the width
+            className="w-full mb-5"
           >
             <div className="article-preview px-5 py-5">
-              <h3 className="font-extrabold text-2xl text-red-950">Save</h3>
+              <h3 className="font-extrabold text-xl sm:text-2xl text-red-950">
+                Save
+              </h3>
               <h2 className="py-2">
                 <span>
-                  <sup className="text-4xl font-bold">
+                  <sup className="text-2xl sm:text-3xl font-bold">
                     <sup>$ &#x20;</sup>
                   </sup>
                 </span>
-                <span className="text-6xl font-bold">{item.amount}</span>
+                <span className="text-4xl sm:text-5xl font-bold">
+                  {item.amount}
+                </span>
               </h2>
-              <p className="text-xl text-gray-500 font-normal tracking-wide">
+              <p className="text-base sm:text-xl text-gray-500 font-normal tracking-wide">
                 {item.details}
               </p>
             </div>
             <figure>
-              <img src={item.img} alt="Lavender Fields" />
+              <img
+                src={item.img}
+                alt="Lavender Fields"
+                className="w-full h-auto"
+              />
             </figure>
           </article>
         ))}
