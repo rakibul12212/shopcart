@@ -1,4 +1,3 @@
-
 import Header from "../Header/Header";
 import TopCategories from "../TopCategories/TopCategories";
 import Savings from "../Savings/Savings";
@@ -11,7 +10,6 @@ import GetCashBack from "../GetCashBack/GetCashBack";
 import BestDealsSorting from "../BestDealsSorting/BestDealsSorting";
 import WPopularProdect from "../WPopularProdect/WPopularProdect";
 import BestSellingStore from "../bestSellingStore/BestSellingStore";
-
 
 const Home = () => {
   return (

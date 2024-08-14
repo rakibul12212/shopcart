@@ -82,7 +82,7 @@ const BestDealsSorting = () => {
     ? data
     : data.slice(0, isMobile ? 3 : data.length);
   return (
-    <div className="container">
+    <div className="container sm:px-5 md:px-20">
       <div>
         <p className="text-4xl py-20 font-bold text-start">
           Today's Best Deals For You!

@@ -13,7 +13,7 @@ const Navbar = () => {
     <>
       <div className="nav-topber flex justify-center bg-green-800 py-3 text-white font-inter text-sm leading-5 ">
         <div className="container">
-          <div className="topbar-content flex justify-center gap-x-40">
+          <div className="topbar-content flex flex-wrap justify-center gap-x-40">
             <div className="contact-content flex gap-1">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -99,7 +99,7 @@ const Navbar = () => {
         </div>
       </div>
       <nav id="sticky-nav" className="bg-white pt-4 ">
-        <div className="container mx-auto lg:flex lg:items-center lg:justify-between lg:gap-4">
+        <div className="container sm:px-2 md:px-16 mx-auto lg:flex lg:items-center lg:justify-between lg:gap-4">
           <div className="flex justify-between">
             {/* logo */}
             <div className="text-green-700 text-2xl font-bold" id="logo">

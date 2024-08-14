@@ -7,7 +7,7 @@ import "swiper/css/pagination";
 import "./MostSellingProduct.css";
 const MostSellingProduct = () => {
   return (
-    <div className="container">
+    <div className="container sm:px-5 md:px-20">
       <div>
         <p className="text-4xl py-20 font-bold text-start">
           Most Selling Products

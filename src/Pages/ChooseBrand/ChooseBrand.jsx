@@ -74,7 +74,7 @@ const ChooseBrand = () => {
     : data.slice(0, isMobile ? 3 : data.length);
 
   return (
-    <div className="container" id="container">
+    <div className="container px-20" id="container">
       <div>
         <p className="text-4xl py-20 font-bold text-start">Choose By Brands</p>
       </div>

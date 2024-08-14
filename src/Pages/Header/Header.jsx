@@ -31,7 +31,7 @@ const Header = () => {
   );
   return (
     <div className="bg">
-      <div className="container flex space-x-10 ">
+      <div className="container sm:px-2 md:px-20 flex space-x-10 ">
         <div id="header-left" className=" py-8 sm:py-20 ">
           <h1 className="font-bold text-3xl sm:text-6xl w-75% sm:w-1/2 items-center tracking-wide text-green-800 ">
             <span>Shopping And</span>
@@ -41,7 +41,7 @@ const Header = () => {
             Shopping is a bit of a relaxing hobby which is sometimes troubling
             for the bank balance.
           </p>
-          <button id="btn">
+          <button id="btn" className="px-4 py-2 bg-green-800 rounded-full text-white">
             <a href="#">Learn More</a>
           </button>
         </div>

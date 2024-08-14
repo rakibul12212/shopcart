@@ -6,7 +6,7 @@ import Footer from "./Footer/Footer";
 
 const Main = () => {
   return (
-    <div>
+    <div className="max-w-{1420px}">
       <Navbar></Navbar>
       <Outlet></Outlet>
       <Footer></Footer>

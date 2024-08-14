@@ -35,7 +35,7 @@ const TopCategories = () => {
     },
   ];
   return (
-    <div className="container mt-20">
+    <div className="container px-20 mt-20">
       <p id="title" className="text-4xl font-bold text-start">
         Shop Our Top Categories
       </p>

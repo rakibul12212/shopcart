@@ -37,7 +37,7 @@ const BestSellingStore = () => {
     },
   ];
   return (
-    <div className="container mt-20">
+    <div className="container sm:px-5 md:px-20 mt-20">
       <div>
         <p className="text-4xl font-bold text-start">
           Services To Help You Shop
