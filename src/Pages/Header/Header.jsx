@@ -43,12 +43,14 @@ const Header = () => {
       style={{
         backgroundImage:
           "url('https://t4.ftcdn.net/jpg/02/52/46/25/360_F_252462576_koy7njo9iYx6gUcM26IZcDUs9fMKIKJs.jpg')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
       }}
     >
-      <div className=" w-full min-h-[500px] flex flex-col md:flex-row items-center justify-between gap-y-12 md:gap-x-10 lg:gap-x-16 ">
+      <div className="w-full min-h-[500px] flex flex-col-reverse md:flex-row items-center justify-between gap-y-12 md:gap-x-10 lg:gap-x-16 px-4 py-10">
         {/* Left Text Section */}
         <div className="md:w-1/3 w-full space-y-8 text-left">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#166534]">
             Redefine Your Look with Style
           </h1>
           <p className="text-base sm:text-lg md:text-xl text-gray-500">
@@ -57,8 +59,11 @@ const Header = () => {
             confidence, and everyday comfort like never before.
           </p>
           <button id="button">
-            <a href="#" className="button">
-              shop Now
+            <a
+              href="#"
+              className="bg-black text-white px-6 py-3 rounded-md hover:bg-gray-800 transition-all"
+            >
+              Shop Now
             </a>
           </button>
         </div>
