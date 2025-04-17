@@ -42,8 +42,7 @@ const Savings = () => {
   ];
   return (
     <div
-      className="container px-4 sm:px-10 lg:px-20 mt-10 lg:mt-20"
-      id="container"
+     
     >
       <div>
         <p className="text-2xl sm:text-3xl lg:text-4xl font-bold text-start">

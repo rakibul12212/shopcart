@@ -23,7 +23,7 @@ const ShopcartServices = () => {
     },
   ];
   return (
-    <div className="container sm:px-5 md:px-20 mt-20">
+    <div >
       <div>
         <p className="text-4xl font-bold text-start">
           Services To Help You Shop

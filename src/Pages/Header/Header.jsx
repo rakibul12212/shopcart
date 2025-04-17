@@ -1,97 +1,100 @@
 import React from "react";
-import "./Header.css";
-import { useKeenSlider } from "keen-slider/react";
-import "keen-slider/keen-slider.min.css";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { EffectCoverflow, Autoplay } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/effect-coverflow";
 
-const carousel = (slider) => {
-  const z = 300;
-  function rotate() {
-    const deg = 360 * slider.track.details.progress;
-    slider.container.style.transform = `translateZ(-${z}px) rotateY(${-deg}deg)`;
-  }
-  slider.on("created", () => {
-    const deg = 360 / slider.slides.length;
-    slider.slides.forEach((element, idx) => {
-      element.style.transform = `rotateY(${deg * idx}deg) translateZ(${z}px)`;
-    });
-    rotate();
-  });
-  slider.on("detailsChanged", rotate);
-};
+const slides = [
+  {
+    id: 1,
+    productImg:
+      "https://plus.unsplash.com/premium_photo-1679456062579-cc90340801db?w=600&auto=format&fit=crop&q=60",
+  },
+  {
+    id: 2,
+    productImg:
+      "https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3?w=600&auto=format&fit=crop&q=60",
+  },
+  {
+    id: 3,
+    productImg:
+      "https://images.unsplash.com/flagged/photo-1590183030142-efad5a97612f?w=600&auto=format&fit=crop&q=60",
+  },
+  {
+    id: 4,
+    productImg:
+      "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=600&auto=format&fit=crop&q=60",
+  },
+  {
+    id: 5,
+    productImg:
+      "https://plus.unsplash.com/premium_photo-1673758910970-b773f66ab7b6?w=600&auto=format&fit=crop&q=60",
+  },
+  {
+    id: 6,
+    productImg:
+      "https://images.unsplash.com/photo-1586277419671-f34cf56500a0?w=600&auto=format&fit=crop&q=60",
+  },
+];
 
 const Header = () => {
-  const [sliderRef] = useKeenSlider(
-    {
-      loop: true,
-      selector: ".carousel__cell",
-      renderMode: "custom",
-      mode: "free-snap",
-    },
-    [carousel]
-  );
   return (
-    <div className="bg">
-      <div className="container sm:px-2 md:px-20 flex space-x-10 ">
-        <div id="header-left" className=" py-8 sm:py-20 ">
-          <h1 className="font-bold text-3xl sm:text-6xl w-75% sm:w-1/2 items-center tracking-wide text-green-800 ">
-            <span>Shopping And</span>
-            <span>Department Store.</span>
+    <div
+      style={{
+        backgroundImage:
+          "url('https://t4.ftcdn.net/jpg/02/52/46/25/360_F_252462576_koy7njo9iYx6gUcM26IZcDUs9fMKIKJs.jpg')",
+      }}
+    >
+      <div className=" w-full min-h-[500px] flex flex-col md:flex-row items-center justify-between gap-y-12 md:gap-x-10 lg:gap-x-16 ">
+        {/* Left Text Section */}
+        <div className="md:w-1/3 w-full space-y-8 text-left">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold">
+            Redefine Your Look with Style
           </h1>
-          <p className="sm:text-2xl w-full sm:w-full py-4 sm:py-8 text-neutral-500 ">
-            Shopping is a bit of a relaxing hobby which is sometimes troubling
-            for the bank balance.
+          <p className="text-base sm:text-lg md:text-xl text-gray-500">
+            Discover the future of fashion with our sleek, modern, and
+            comfortable apparel—crafted to empower your unique style,
+            confidence, and everyday comfort like never before.
           </p>
-          <button id="btn" className="px-4 py-2 bg-green-800 rounded-full text-white">
-            <a href="#">Learn More</a>
+          <button id="button">
+            <a href="#" className="button">
+              shop Now
+            </a>
           </button>
         </div>
 
-        <div
-          id="header-right"
-          className="container py-8 sm:py-20 hidden sm:block "
-        >
-          <div className="wrapper">
-            <div className="scene">
-              <div className="carousel keen-slider" ref={sliderRef}>
-                <div className="carousel__cell number-slide1 ">
-                  <img
-                    src="https://plus.unsplash.com/premium_photo-1679456062579-cc90340801db?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8aGVhZHBob25lfGVufDB8fDB8fHww"
-                    alt=""
-                  />
-                </div>
-                <div className="carousel__cell number-slide2">
-                  <img
-                    src="https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHdhdGNoJTIwcHJvdHJhaXR8ZW58MHx8MHx8fDA%3D"
-                    alt=""
-                  />
-                </div>
-                <div className="carousel__cell number-slide3">
-                  <img
-                    src="https://images.unsplash.com/flagged/photo-1590183030142-efad5a97612f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8bWFjYm9vayUyMHByb3RyYWl0fGVufDB8fDB8fHww"
-                    alt=""
-                  />
-                </div>
-                <div className="carousel__cell number-slide4">
-                  <img
-                    src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8c2hvZXxlbnwwfHwwfHx8MA%3D%3D"
-                    alt=""
-                  />
-                </div>
-                <div className="carousel__cell number-slide5">
-                  <img
-                    src="https://plus.unsplash.com/premium_photo-1673758910970-b773f66ab7b6?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8YmFnfGVufDB8fDB8fHww"
-                    alt=""
-                  />
-                </div>
-                <div className="carousel__cell number-slide6">
-                  <img
-                    src="https://images.unsplash.com/photo-1586277419671-f34cf56500a0?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHdhdGVyJTIwYm90dGxlfGVufDB8fDB8fHww"
-                    alt=""
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
+        {/* Right Product Coverflow Carousel */}
+        <div className="md:w-1/2 w-full">
+          <Swiper
+            effect="coverflow"
+            grabCursor={true}
+            centeredSlides={true}
+            slidesPerView={"auto"}
+            loop={true}
+            coverflowEffect={{
+              rotate: 50,
+              stretch: 0,
+              depth: 100,
+              modifier: 1,
+              slideShadows: true,
+            }}
+            modules={[EffectCoverflow, Autoplay]}
+            autoplay={{ delay: 4000 }}
+            className="mySwiper"
+          >
+            {slides.map((slide) => (
+              <SwiperSlide
+                key={slide.id}
+                className="w-[250px] md:w-[300px] lg:w-[350px] flex justify-center"
+              >
+                <img
+                  src={slide.productImg}
+                  alt={`Product ${slide.id}`}
+                  className="object-contain max-h-[400px] shadow-lg rounded-lg"
+                />
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
       </div>
     </div>

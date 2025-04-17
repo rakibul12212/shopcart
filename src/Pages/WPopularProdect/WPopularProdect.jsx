@@ -6,7 +6,7 @@ import "swiper/css/pagination";
 
 const WPopularProdect = () => {
   return (
-    <div className="container sm:px-5 md:px-20">
+    <div>
       <div>
         <p className="text-4xl py-20 font-bold text-start">
           Weekly Popular Products

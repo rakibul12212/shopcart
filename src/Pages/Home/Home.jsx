@@ -10,10 +10,11 @@ import GetCashBack from "../GetCashBack/GetCashBack";
 import BestDealsSorting from "../BestDealsSorting/BestDealsSorting";
 import WPopularProdect from "../WPopularProdect/WPopularProdect";
 import BestSellingStore from "../bestSellingStore/BestSellingStore";
+import Container from "../../Component/Container";
 
 const Home = () => {
   return (
-    <div>
+    <Container>
       <Header></Header>
       <TopCategories></TopCategories>
       <TrendingProduct></TrendingProduct>
@@ -26,7 +27,7 @@ const Home = () => {
       <WPopularProdect></WPopularProdect>
       <BestSellingStore></BestSellingStore>
       <ShopcartServices></ShopcartServices>
-    </div>
+    </Container>
   );
 };
 
