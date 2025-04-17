@@ -4,7 +4,7 @@ import Container from "../../Component/Container";
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   return (
-    <Container>
+    <Container className="pt-10">
       <div className="border-t border-gray-500">
         <footer className="bg-white">
           <div className=" max-w-screen-4xl pb-6 pt-16 ">
@@ -286,10 +286,8 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div className="py-12 text-center text-sm text-gray-500">
-              <p>
-                &copy; {currentYear} Shopcart. All rights reserved.
-              </p>
+            <div className="pt-10 text-center text-sm text-gray-500">
+              <p>&copy; {currentYear} Shopcart. All rights reserved.</p>
             </div>
           </div>
         </footer>

@@ -42,7 +42,7 @@ export default function Navbar() {
 
       {/* Main Navbar */}
       <Container>
-        <nav className="relative bg-white px-4 py-3">
+        <nav className="relative bg-white  py-3">
           <div className="flex items-center justify-between">
             {/* Logo */}
             <div className="flex items-center gap-6">

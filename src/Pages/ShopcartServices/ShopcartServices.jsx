@@ -5,7 +5,7 @@ const ShopcartServices = () => {
   const Data = [
     {
       id: 1,
-      title: "Frequently Asked ",
+      title: "Frequently Asked Question",
       description: "Updates on safe Shopping in our Stores",
       img: "https://i.ibb.co/6s7tf45/Questions.png",
     },
@@ -23,7 +23,7 @@ const ShopcartServices = () => {
     },
   ];
   return (
-    <div >
+    <div>
       <div>
         <p className="text-4xl font-bold text-start">
           Services To Help You Shop

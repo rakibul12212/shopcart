@@ -85,7 +85,7 @@ const Header = () => {
             {slides.map((slide) => (
               <SwiperSlide
                 key={slide.id}
-                className="w-[250px] md:w-[300px] lg:w-[350px] flex justify-center"
+                className="w-[250px] md:w-[350px] lg:w-[350px] flex justify-center"
               >
                 <img
                   src={slide.productImg}

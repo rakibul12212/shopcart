@@ -36,7 +36,7 @@ const TopCategories = () => {
   ];
   return (
     <div>
-      <p id="title" className="text-4xl font-bold text-start">
+      <p id="title" className="text-4xl font-bold text-center">
         Shop Our Top Categories
       </p>
       <div className="category-articles pt-20">

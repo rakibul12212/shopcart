@@ -41,11 +41,9 @@ const Savings = () => {
     },
   ];
   return (
-    <div
-     
-    >
+    <div>
       <div>
-        <p className="text-2xl sm:text-3xl lg:text-4xl font-bold text-start">
+        <p className="text-2xl sm:text-3xl lg:text-4xl font-bold text-center">
           Get Up To 70% Off
         </p>
       </div>

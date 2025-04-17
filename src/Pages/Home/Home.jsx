@@ -14,7 +14,7 @@ import Container from "../../Component/Container";
 
 const Home = () => {
   return (
-    <Container>
+    <Container className="space-y-28">
       <Header></Header>
       <TopCategories></TopCategories>
       <TrendingProduct></TrendingProduct>
