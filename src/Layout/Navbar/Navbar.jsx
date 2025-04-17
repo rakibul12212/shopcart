@@ -6,6 +6,7 @@ import {
   FaPhoneAlt,
   FaUser,
   FaShoppingCart,
+  FaSearch,
 } from "react-icons/fa";
 import Container from "../../Component/Container";
 
@@ -86,12 +87,13 @@ export default function Navbar() {
               <span className="cursor-pointer hover:text-green-600 hover:scale-105 transition-all duration-200">
                 Delivery
               </span>
-              <div className="w-1/3">
+              <div className="w-1/3 relative">
                 <input
                   type="text"
                   placeholder="Search Product"
-                  className="w-full px-4 py-2 border rounded-full focus:outline-none hover:border-green-500 transition"
+                  className="w-full pl-10 pr-4 py-2 border rounded-full focus:outline-none hover:border-green-500 transition"
                 />
+                <FaSearch className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
               </div>
             </div>
 
